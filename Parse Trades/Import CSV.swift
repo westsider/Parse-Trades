@@ -34,20 +34,36 @@ class CSVFeed {
 //        }
 //    }
     
-    func getPricesFromCSV(debug: Bool)->Bool {
+    func getPricesFromCSV(debug: Bool) {
       
         let filleURLProject = Bundle.main.path(forResource: "ibTrades2", ofType: "csv")
         let stream = InputStream(fileAtPath: filleURLProject!)!
         let csv = try! CSVReader(stream: stream)
         
-        //1:Acct ID.Symbol,Trade 4:Date/Time,Settle Date,Exchange,8:Type,9:Quantity,`0:Price,Proceeds,12:Comm,Fee,Code
+        //Acct ID, 2:Symbol,Trade 4:Date/Time,Settle Date,Exchange,8:Type,9:Quantity,10:Price,Proceeds,12:Comm,Fee,Code
         
     
         while let row = csv.next() {
-            if ( debug ) { print("\(row)") }
+           // if ( debug ) { print("\(row)") }
 //            let prices = Prices()
 //            prices.ticker = ticker
-//            let date = row[0]
+            
+            if row[0].contains("Total") || row[7].isEmpty  {
+                //return
+                //print("----")
+            } else {
+                let ticker = row[1] as String
+                let date = row[4] as String
+                //MARK: TODO - conver to to numbers
+                let quantity = row[7]
+                let price = row[8]
+                let comm = row[10]
+                
+                print("\(ticker) \t\(date) \t\(quantity) \t\(price) \t\(comm)")
+            }
+            
+            //MARK: TODO - converto to numbers
+            
 //            prices.dateString = date
 //            prices.date = Utilities().convertToDateFrom(string: date, debug: false)
 //            if let close = Double(row[1]){
@@ -81,6 +97,6 @@ class CSVFeed {
 //            lastLow = prices.high
 //            lastHigh = prices.low
         }
-        return true
+
     }
 }
