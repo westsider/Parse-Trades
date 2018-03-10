@@ -44,4 +44,20 @@ class Trades: Object {
         })
         if debug { print("\(ticker) \t\(dateString) \t\(date) \t\(quantity) \t\(price) \t\(comm)") }
     }
+    
+    func sortTradesByDate() {
+        
+    }
+    
+    func sortAllTrades(debug:Bool)-> Results<Trades> {
+        let realm = try! Realm()
+        let allTrades = realm.objects(Trades.self).sorted(byKeyPath: "date", ascending: true)
+        if ( debug ) {
+            for each in allTrades {
+                print("\(each.ticker) \t\(each.dateString)\t\(each.quantity) \t\(each.price) \t\(each.comm)")
+            }
+        }
+        return allTrades
+    }
+    
 }

@@ -34,5 +34,6 @@ class CSVFeed {
             }
         }
         print("\nCSV \(fileCalled) has been saved to realm.")
+        let _ = Trades().sortAllTrades(debug: true)
     }
 }
