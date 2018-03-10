@@ -11,6 +11,7 @@
 		0D1AE544205383D600601663 /* IB_3_9.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AE543205383D600601663 /* IB_3_9.csv */; };
 		0D58260220538D9100EFB7B9 /* Trades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58260120538D9100EFB7B9 /* Trades.swift */; };
 		0D582605205393A700EFB7B9 /* My Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D582604205393A700EFB7B9 /* My Utilities.swift */; };
+		0D5826072053A35E00EFB7B9 /* Cumulative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5826062053A35E00EFB7B9 /* Cumulative.swift */; };
 		0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F66205362AB00C4D567 /* AppDelegate.swift */; };
 		0DE88F69205362AB00C4D567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F68205362AB00C4D567 /* ViewController.swift */; };
 		0DE88F6C205362AB00C4D567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE88F6A205362AB00C4D567 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		0D1AE543205383D600601663 /* IB_3_9.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IB_3_9.csv; sourceTree = "<group>"; };
 		0D58260120538D9100EFB7B9 /* Trades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trades.swift; sourceTree = "<group>"; };
 		0D582604205393A700EFB7B9 /* My Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "My Utilities.swift"; path = "Parse Trades/Model/My Utilities.swift"; sourceTree = "<group>"; };
+		0D5826062053A35E00EFB7B9 /* Cumulative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cumulative.swift; sourceTree = "<group>"; };
 		0DE88F63205362AB00C4D567 /* Parse Trades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Trades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE88F66205362AB00C4D567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE88F68205362AB00C4D567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				0D1AE53E205364C100601663 /* Import CSV.swift */,
 				0D58260120538D9100EFB7B9 /* Trades.swift */,
+				0D5826062053A35E00EFB7B9 /* Cumulative.swift */,
 				0D1AE543205383D600601663 /* IB_3_9.csv */,
 			);
 			path = Model;
@@ -251,6 +254,7 @@
 				0D1AE53F205364C100601663 /* Import CSV.swift in Sources */,
 				0D58260220538D9100EFB7B9 /* Trades.swift in Sources */,
 				0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */,
+				0D5826072053A35E00EFB7B9 /* Cumulative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

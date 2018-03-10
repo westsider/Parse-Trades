@@ -35,6 +35,5 @@ class CSVFeed {
         }
         print("\nCSV \(fileCalled) has been saved to realm.\n")
         completion(true)
-        
     }
 }
