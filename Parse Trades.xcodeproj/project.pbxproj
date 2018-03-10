@@ -10,6 +10,7 @@
 		0D1AE53F205364C100601663 /* Import CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AE53E205364C100601663 /* Import CSV.swift */; };
 		0D1AE544205383D600601663 /* IB_3_9.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AE543205383D600601663 /* IB_3_9.csv */; };
 		0D1AE5462053851300601663 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AE5452053851300601663 /* Utilities.swift */; };
+		0D58260220538D9100EFB7B9 /* Trades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D58260120538D9100EFB7B9 /* Trades.swift */; };
 		0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F66205362AB00C4D567 /* AppDelegate.swift */; };
 		0DE88F69205362AB00C4D567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F68205362AB00C4D567 /* ViewController.swift */; };
 		0DE88F6C205362AB00C4D567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE88F6A205362AB00C4D567 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		0D1AE53E205364C100601663 /* Import CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Import CSV.swift"; sourceTree = "<group>"; };
 		0D1AE543205383D600601663 /* IB_3_9.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IB_3_9.csv; sourceTree = "<group>"; };
 		0D1AE5452053851300601663 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "/Users/15slim/Documents/_xCode/Parse Trades/Parse Trades/Utilities.swift"; sourceTree = "<absolute>"; };
+		0D58260120538D9100EFB7B9 /* Trades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trades.swift; sourceTree = "<group>"; };
 		0DE88F63205362AB00C4D567 /* Parse Trades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Trades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE88F66205362AB00C4D567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE88F68205362AB00C4D567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				0DE88F6A205362AB00C4D567 /* Main.storyboard */,
 				0DE88F68205362AB00C4D567 /* ViewController.swift */,
 				0D1AE53E205364C100601663 /* Import CSV.swift */,
+				0D58260120538D9100EFB7B9 /* Trades.swift */,
 				0D1AE543205383D600601663 /* IB_3_9.csv */,
 				0D1AE5452053851300601663 /* Utilities.swift */,
 				0DE88F70205362AB00C4D567 /* Assets.xcassets */,
@@ -238,6 +241,7 @@
 				0DE88F69205362AB00C4D567 /* ViewController.swift in Sources */,
 				0D1AE53F205364C100601663 /* Import CSV.swift in Sources */,
 				0D1AE5462053851300601663 /* Utilities.swift in Sources */,
+				0D58260220538D9100EFB7B9 /* Trades.swift in Sources */,
 				0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
