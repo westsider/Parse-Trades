@@ -12,10 +12,10 @@ import CSV
 
 class CSVFeed {
     
-    func getPricesFromCSV(debug: Bool) {
+    func getPricesFromCSV(fileCalled:String, debug: Bool) {
         
         Trades().deleteAll()
-        let filleURLProject = Bundle.main.path(forResource: "IB_3_9", ofType: "csv")
+        let filleURLProject = Bundle.main.path(forResource: fileCalled, ofType: "csv")
         let stream = InputStream(fileAtPath: filleURLProject!)!
         let csv = try! CSVReader(stream: stream)
         
@@ -29,11 +29,10 @@ class CSVFeed {
                 let ticker = row[1] as String
                 let dateString = row[4] as String
                 if let price = Double(row[8]), let comm = Double(row[10]), let quantity = Int(row[7]) {
-                    Trades().addNewrow(ticker: ticker, dateString: dateString, price: price, comm: comm, quantity: quantity)
-                    
+                    Trades().addNewrow(ticker: ticker, dateString: dateString, price: price, comm: comm, quantity: quantity, debug: debug)
                 }
             }
         }
-        
+        print("\nCSV \(fileCalled) has been saved to realm.")
     }
 }

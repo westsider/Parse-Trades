@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let _ = CSVFeed().getPricesFromCSV(debug: true)
+        let _ = CSVFeed().getPricesFromCSV(fileCalled: "IB_3_9", debug: true)
     }
 
 
