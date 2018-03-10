@@ -29,15 +29,18 @@ class CSVFeed {
                 //print("----")
             } else {
                 let ticker = row[1] as String
-                let date = row[4] as String
+                let stringDate = row[4] as String
+                let date = Utilities().convertToDateFrom(string: stringDate, debug: false)
                 //MARK: TODO - convert to numbers
-                let quantity = row[7]
-                let price = row[8]
-                let comm = row[10]
+       
+                if let price = Double(row[8]), let comm = Double(row[10]), let quantity = Int(row[7]) {
+                    print("\(ticker) \t\(stringDate) \t\(date) \t\(quantity) \t\(price) \t\(comm)")
+                }
                 
-                let realDate = Utilities().convertToDateFrom(string: date, debug: false)
                 
-                print("\(ticker) \t\(date) \t\(realDate) \t\(quantity) \t\(price) \t\(comm)")
+                
+                
+                
             }
             
             //MARK: TODO - converto to numbers
