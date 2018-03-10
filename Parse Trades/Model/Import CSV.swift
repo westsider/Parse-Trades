@@ -12,7 +12,7 @@ import CSV
 
 class CSVFeed {
     
-    func getPricesFromCSV(fileCalled:String, debug: Bool) {
+    func getPricesFromCSV(fileCalled:String, debug: Bool, completion: @escaping (Bool) -> Void) {
         
         Trades().deleteAll()
         let filleURLProject = Bundle.main.path(forResource: fileCalled, ofType: "csv")
@@ -33,7 +33,8 @@ class CSVFeed {
                 }
             }
         }
-        print("\nCSV \(fileCalled) has been saved to realm.")
-        let _ = Trades().sortAllTrades(debug: true)
+        print("\nCSV \(fileCalled) has been saved to realm.\n")
+        completion(true)
+        
     }
 }

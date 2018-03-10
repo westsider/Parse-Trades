@@ -12,8 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let _ = CSVFeed().getPricesFromCSV(fileCalled: "IB_3_9", debug: true)
+        let fileName = "IB_3_9"
+        CSVFeed().getPricesFromCSV(fileCalled: fileName, debug: false) { (finished) in
+            if finished {
+                let _ = Trades().sortAllTrades(debug: true)
+            }
+        }
     }
 
 
