@@ -12,54 +12,32 @@ import CSV
 
 class CSVFeed {
     
-//    func getData(galaxie: [String], debug:Bool, completion: @escaping (Bool) -> Void) {
-//
-//        var counter = 0
-//        let total = galaxie.count
-//        var done:Bool = false
-//        for  symbols in galaxie {
-//            DispatchQueue.global(qos: .background).async {
-//                done = false
-//                done = self.getPricesFromCSV(ticker: symbols, debug: debug)
-//                if done {
-//                    DispatchQueue.main.async {
-//                        counter += 1
-//                        print("CSV \(counter) of \(total)")
-//                        if counter == total {
-//                            completion(true)
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-    
     func getPricesFromCSV(debug: Bool) {
       
-        let filleURLProject = Bundle.main.path(forResource: "ibTrades2", ofType: "csv")
+        let filleURLProject = Bundle.main.path(forResource: "IB_3_9", ofType: "csv")
         let stream = InputStream(fileAtPath: filleURLProject!)!
         let csv = try! CSVReader(stream: stream)
         
         //Acct ID, 2:Symbol,Trade 4:Date/Time,Settle Date,Exchange,8:Type,9:Quantity,10:Price,Proceeds,12:Comm,Fee,Code
-        
-    
         while let row = csv.next() {
            // if ( debug ) { print("\(row)") }
 //            let prices = Prices()
 //            prices.ticker = ticker
             
-            if row[0].contains("Total") || row[7].isEmpty  {
+            if row[0].contains("Total") || row[7].isEmpty  || row[4].contains("Settle") {
                 //return
                 //print("----")
             } else {
                 let ticker = row[1] as String
                 let date = row[4] as String
-                //MARK: TODO - conver to to numbers
+                //MARK: TODO - convert to numbers
                 let quantity = row[7]
                 let price = row[8]
                 let comm = row[10]
                 
-                print("\(ticker) \t\(date) \t\(quantity) \t\(price) \t\(comm)")
+                let realDate = Utilities().convertToDateFrom(string: date, debug: false)
+                
+                print("\(ticker) \t\(date) \t\(realDate) \t\(quantity) \t\(price) \t\(comm)")
             }
             
             //MARK: TODO - converto to numbers
