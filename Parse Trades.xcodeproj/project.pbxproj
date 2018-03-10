@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1AE53F205364C100601663 /* Import CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AE53E205364C100601663 /* Import CSV.swift */; };
+		0D1AE5422053782C00601663 /* ibTrades2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AE5412053782C00601663 /* ibTrades2.csv */; };
 		0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F66205362AB00C4D567 /* AppDelegate.swift */; };
 		0DE88F69205362AB00C4D567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F68205362AB00C4D567 /* ViewController.swift */; };
 		0DE88F6C205362AB00C4D567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE88F6A205362AB00C4D567 /* Main.storyboard */; };
 		0DE88F6F205362AB00C4D567 /* Parse_Trades.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DE88F6D205362AB00C4D567 /* Parse_Trades.xcdatamodeld */; };
 		0DE88F71205362AB00C4D567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE88F70205362AB00C4D567 /* Assets.xcassets */; };
 		0DE88F74205362AB00C4D567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE88F72205362AB00C4D567 /* LaunchScreen.storyboard */; };
+		8622359601C07F8D0A923214 /* Pods_Parse_Trades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55327F34A8AD17FF57F17AC5 /* Pods_Parse_Trades.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1AE53E205364C100601663 /* Import CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Import CSV.swift"; sourceTree = "<group>"; };
+		0D1AE5412053782C00601663 /* ibTrades2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ibTrades2.csv; sourceTree = "<group>"; };
 		0DE88F63205362AB00C4D567 /* Parse Trades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parse Trades.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE88F66205362AB00C4D567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE88F68205362AB00C4D567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		0DE88F70205362AB00C4D567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DE88F73205362AB00C4D567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DE88F75205362AB00C4D567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55327F34A8AD17FF57F17AC5 /* Pods_Parse_Trades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parse_Trades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD74437D6591D3C07142D196 /* Pods-Parse Trades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Trades.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parse Trades/Pods-Parse Trades.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C335302D59110D0E83A593 /* Pods-Parse Trades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse Trades.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parse Trades/Pods-Parse Trades.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8622359601C07F8D0A923214 /* Pods_Parse_Trades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				0DE88F65205362AB00C4D567 /* Parse Trades */,
 				0DE88F64205362AB00C4D567 /* Products */,
+				DE7B93D8EC18AF2483547903 /* Pods */,
+				E3857A39C0CDD5D30D27B0E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,34 @@
 		0DE88F65205362AB00C4D567 /* Parse Trades */ = {
 			isa = PBXGroup;
 			children = (
-				0DE88F66205362AB00C4D567 /* AppDelegate.swift */,
-				0DE88F68205362AB00C4D567 /* ViewController.swift */,
 				0DE88F6A205362AB00C4D567 /* Main.storyboard */,
+				0DE88F68205362AB00C4D567 /* ViewController.swift */,
+				0D1AE53E205364C100601663 /* Import CSV.swift */,
+				0D1AE5412053782C00601663 /* ibTrades2.csv */,
 				0DE88F70205362AB00C4D567 /* Assets.xcassets */,
+				0DE88F66205362AB00C4D567 /* AppDelegate.swift */,
 				0DE88F72205362AB00C4D567 /* LaunchScreen.storyboard */,
 				0DE88F75205362AB00C4D567 /* Info.plist */,
 				0DE88F6D205362AB00C4D567 /* Parse_Trades.xcdatamodeld */,
 			);
 			path = "Parse Trades";
+			sourceTree = "<group>";
+		};
+		DE7B93D8EC18AF2483547903 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD74437D6591D3C07142D196 /* Pods-Parse Trades.debug.xcconfig */,
+				F6C335302D59110D0E83A593 /* Pods-Parse Trades.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3857A39C0CDD5D30D27B0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55327F34A8AD17FF57F17AC5 /* Pods_Parse_Trades.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DE88F78205362AB00C4D567 /* Build configuration list for PBXNativeTarget "Parse Trades" */;
 			buildPhases = (
+				E34A58930CABE319B4252CC9 /* [CP] Check Pods Manifest.lock */,
 				0DE88F5F205362AA00C4D567 /* Sources */,
 				0DE88F60205362AA00C4D567 /* Frameworks */,
 				0DE88F61205362AA00C4D567 /* Resources */,
+				37E7578569F745FA7F9F5522 /* [CP] Embed Pods Frameworks */,
+				B97C383C279E4A469D25FA17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,10 +162,69 @@
 				0DE88F74205362AB00C4D567 /* LaunchScreen.storyboard in Resources */,
 				0DE88F71205362AB00C4D567 /* Assets.xcassets in Resources */,
 				0DE88F6C205362AB00C4D567 /* Main.storyboard in Resources */,
+				0D1AE5422053782C00601663 /* ibTrades2.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37E7578569F745FA7F9F5522 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parse Trades/Pods-Parse Trades-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parse Trades/Pods-Parse Trades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B97C383C279E4A469D25FA17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parse Trades/Pods-Parse Trades-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E34A58930CABE319B4252CC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parse Trades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DE88F5F205362AA00C4D567 /* Sources */ = {
@@ -141,6 +233,7 @@
 			files = (
 				0DE88F6F205362AB00C4D567 /* Parse_Trades.xcdatamodeld in Sources */,
 				0DE88F69205362AB00C4D567 /* ViewController.swift in Sources */,
+				0D1AE53F205364C100601663 /* Import CSV.swift in Sources */,
 				0DE88F67205362AB00C4D567 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +369,7 @@
 		};
 		0DE88F79205362AB00C4D567 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD74437D6591D3C07142D196 /* Pods-Parse Trades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +385,7 @@
 		};
 		0DE88F7A205362AB00C4D567 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C335302D59110D0E83A593 /* Pods-Parse Trades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
